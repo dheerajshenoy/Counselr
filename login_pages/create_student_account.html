@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="create_student_account.css" />
+    </head>
+    <body>
+
+        <h2>Create Student Account</h2>
+
+        <form action="create_student_account.php" method="post">
+            <div class="container">
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+                    <label for="fname"><b>First Name *</b></label>
+                    <input type="text" placeholder="Enter First Name" name="fname" required>
+
+                    <label for="mname"><b>Middle Name</b></label>
+                    <input type="text" placeholder="Enter Middle Name" name="mname" />
+
+                    <label for="lname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+                    <label for="dob"><b>Date Of Birth *</b></label>
+                    <input type="date" name="dob" required />
+
+                    <label for="gender"><b>Gender *</b></label>
+                    <select name="gender" required>
+                        <option value = "male">Male</option>
+                        <option value = "female">Female</option>
+                        <option value = "no_gender_disclose">Don't want to disclose</option>
+                    </select>
+
+                    <label for="fathers name"><b>Father's Name *</b></label>
+                    <input type="text" placeholder="Enter Father's Name" name="fathers name" required>
+
+                    <label for="mothers name"><b>Mother's Name *</b></label>
+                    <input type="text" placeholder="Enter Mother's Name" name="mothers name" required>
+
+                    <label for="mobile number"><b>Mobile Number *</b></label>
+                    <input type="tel" maxlength=10 required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="highest_education_studied"><b>Qualification *</b></label>
+                    <select name="highest_education_studied" required>
+                        <option value="masters">Masters</option>
+                        <option value="bachelors">Bachelors</option>
+                        <option value="higher secondary">Higher Secondary</option>
+                        <option value="matriculation">Matriculation</option>
+                        <option value="high school">High School</option>
+                        <option value="primary school">Primary School</option>
+                    </select>
+
+                    <label for="institute name"><b>Institute Name *</b></label>
+                    <input type="text" placeholder="Enter Institute Name" required/>
+
+                    <label for="institute address"><b>Institute Address *</b></label>
+                    <textarea type="text" placeholder="Enter Institute Address" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <label for="uname"><b>Username *</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password *</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="photo"><b>Photo *</b></label>
+                    <input type="file" name="photo" required>
+
+                </fieldset>
+                <input type="checkbox" id="terms_and_conditions_checkbox" required /><label for="terms and conditions">I agree to the <a href="terms_and_conditions.html">terms and conditions</a></label>
+                <button type="submit">Create Account</button>
+            </div>
+
+        </form>
+
+    </body>
+</html>
