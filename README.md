@@ -8,6 +8,7 @@ PCL Project
 * Changed the appearance of login/signup page buttons
 * Login/Signup page validation handling
 * Text overlay for slideshow
+* Beautiful shadow effects on hover for buttons
 
 # TODO
 
