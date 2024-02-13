@@ -9,13 +9,13 @@ import {
     Button,
 } from "@mui/material";
 
+import css from "./login.css";
 import { useState } from "react";
 import Footer from "../HomepageComponents/Footer";
 import { Link, Navigate, Route } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import LandingPage from "../HomepageComponents/LandingPage";
-import css from "./login.css";
 
 <Route path="/landing" element={<LandingPage/>}></Route>
 
@@ -61,52 +61,50 @@ export default function Login() {
     };
 
     return (
-	<>
-	    <form onSubmit={handlesubmit}>
-		<h1>Login</h1>
-		<Card sx={{ p: 5, mt: 2, margin: "auto" }}>
-		    <TextField
-			name="Outlined"
-			placeholder="Enter your Email"
-			variant="outlined"
-			sx={{ display: "block" }}
-			fullWidth
-			onChange={(e) => setemail(e.target.value)}
-		    />
-		    <small>{emailerr && <p>email is Mandetory</p>}</small>
+	<form onSubmit={handlesubmit}>
+	    <h1>Login</h1>
+	    <Card sx={{ p: 5, mt: 2, margin: "auto" }}>
+		<TextField
+		    name="Outlined"
+		    placeholder="Enter your Email"
+		    variant="outlined"
+		    sx={{ display: "block" }}
+		    fullWidth
+		    onChange={(e) => setemail(e.target.value)}
+		/>
+		<small>{emailerr && <p>email is Mandatory</p>}</small>
 
-		    <TextField
-			name="Outlined"
-			placeholder="Enter your Password"
-			variant="outlined"
-			fullWidth
-			type="password"
-			required
-			onChange={(e) => setpassword(e.target.value)}
-			sx={{ display: "block", mt: 1, margin: "auto ,1" }}
-		    />
-		    <small>{passworderr && <p>Name is Mandetory</p>}</small>
+		<TextField
+		    name="Outlined"
+		    placeholder="Enter your Password"
+		    variant="outlined"
+		    fullWidth
+		    type="password"
+		    required
+		    onChange={(e) => setpassword(e.target.value)}
+		    sx={{ display: "block", mt: 1, margin: "auto ,1" }}
+		/>
+		<small>{passworderr && <p>Name is Mandatory</p>}</small>
 
-		    <Button component={Link}
-			    className="custom-btn"
-			    variant="contained"
-			    sx={{ width: 100, margin: "auto", mt: -1 }}
-			    disableRipple
-			    type="submit"
-			    onClick={cnfLogin}>
-			Login
-		    </Button>
+		<Button component={Link}
+			className="custombtn"
+			variant="contained"
+			sx={{ width: 100, margin: "auto", mt: -1 }}
+			disableRipple
+			type="submit"
+			onClick={cnfLogin}>
+		    Login
+		</Button>
 
-		    <Button component={Link}
-			    to="/signup"
-			    variant="contained"
-			    sx={{ width: "auto", margin: "auto", mt: -1 }}
-			    disableRipple
-			    className="custom-btn">
-			Sign Up
-		    </Button>
-		</Card>
-	    </form>
-	</>
+		<Button className="custombtn"
+			component={Link}
+			to="/signup"
+			variant="contained"
+			sx={{ width: "auto", margin: "auto", mt: -1 }}
+			disableRipple>
+		    Sign Up
+		</Button>
+	    </Card>
+	</form>
     );
 }

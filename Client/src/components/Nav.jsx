@@ -19,8 +19,8 @@ export default function Nav(){
 		<ul>
 		    <li><Link to='/' className='LinkBtn' >Home</Link></li>
 		    <li><Link to='/login' className='LinkBtn' >Login</Link></li>
-		    <li><Link to='/pricing' className='LinkBtn' >Pricing</Link></li>
 		    <li><Link to='/signup' className='LinkBtn' >Signup</Link></li>
+		    <li><Link to='/pricing' className='LinkBtn' >Pricing</Link></li>
 		</ul>
             </div>
         </nav>

@@ -3,31 +3,27 @@ form {
     margin: auto;
     text-align: center;
 }
+
 h1 {
     text-align: center;
 }
 
-.link {
-    padding: .3rem .8rem ;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: .2rem;
-    font-size: 1.2rem;
-    background-color:#1976D2;
-}
-
-.custom-btn {
-    background-color: #FF5000;
+.custombtn {
     margin: 1rem;
+    background-color: #FF5000;
     margin-top: 3rem;
     padding: .5rem;
     width: 100px;
 }
 
-.custom-btn:hover {
+.custombtn:hover {
     background-color: #FF5000;
     box-shadow: 0 5px 20px 0 gray;
+}
+
+.testbtn {
+    background-color: orange;
+    box-shadow: 0 5px 20px 0 gray;
+    padding: 10px;
+    margin: 10px;
 }
