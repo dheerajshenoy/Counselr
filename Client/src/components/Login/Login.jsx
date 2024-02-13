@@ -16,7 +16,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import LandingPage from "../HomepageComponents/LandingPage";
 import css from "./login.css";
-//  import css from "./CSS/style.css";
 
 <Route path="/landing" element={<LandingPage/>}></Route>
 
