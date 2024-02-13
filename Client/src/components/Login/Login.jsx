@@ -14,10 +14,9 @@ import Footer from "../HomepageComponents/Footer";
 import { Link, Navigate, Route } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-//  import css from "./CSS/style.css";
 import LandingPage from "../HomepageComponents/LandingPage";
-import css from "./Login.css";
-let a;
+import css from "./login.css";
+//  import css from "./CSS/style.css";
 
 <Route path="/landing" element={<LandingPage/>}></Route>
 
@@ -89,20 +88,22 @@ export default function Login() {
 		    />
 		    <small>{passworderr && <p>Name is Mandetory</p>}</small>
 
-		    <Button component={Link} className="custombtn"
-			variant="contained"
-			sx={{ width: 100, margin: "auto", mt: -1 }}
-			disableRipple
-			type="submit"
-			onClick={cnfLogin}>
+		    <Button component={Link}
+			    className="custom-btn"
+			    variant="contained"
+			    sx={{ width: 100, margin: "auto", mt: -1 }}
+			    disableRipple
+			    type="submit"
+			    onClick={cnfLogin}>
 			Login
 		    </Button>
+
 		    <Button component={Link}
 			    to="/signup"
 			    variant="contained"
 			    sx={{ width: "auto", margin: "auto", mt: -1 }}
 			    disableRipple
-			    className="custombtn">
+			    className="custom-btn">
 			Sign Up
 		    </Button>
 		</Card>

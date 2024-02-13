@@ -1,9 +1,9 @@
-form{
+form {
     width: 40%;
     margin: auto;
     text-align: center;
 }
-h1{
+h1 {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1{
     background-color:#1976D2;
 }
 
-.custombtn {
+.custom-btn {
     background-color: #FF5000;
     margin: 1rem;
     margin-top: 3rem;
@@ -27,7 +27,7 @@ h1{
     width: 100px;
 }
 
-.custombtn:hover {
+.custom-btn:hover {
     background-color: #FF5000;
     box-shadow: 0 5px 20px 0 gray;
 }
