@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.285a377c.css",
+    "main.js": "/static/js/main.c0bd7d88.js",
+    "static/js/71.de9ecf15.chunk.js": "/static/js/71.de9ecf15.chunk.js",
+    "static/media/test.gif": "/static/media/test.8e4c9949c91a5aa8f558.gif",
+    "static/media/incoming-call.gif": "/static/media/incoming-call.2a08a9feac7b08e58267.gif",
+    "static/media/copyright.gif": "/static/media/copyright.1e53c1a92f07415953e9.gif",
+    "static/media/email.gif": "/static/media/email.f9213bf627ced785a95a.gif",
+    "static/media/Primary_and_secondary_education_206b_383a1eb6f2.jpg": "/static/media/Primary_and_secondary_education_206b_383a1eb6f2.5f5c8f8695e14a015c55.jpg",
+    "static/media/iStock-1072470136.jpg": "/static/media/iStock-1072470136.27e8b76fa0dd253e78f0.jpg",
+    "static/media/360_F_411196492_ALeI8x6briszcGigHOP3rWfkNqDh7D18.jpg": "/static/media/360_F_411196492_ALeI8x6briszcGigHOP3rWfkNqDh7D18.08bbedc8440031f3ba17.jpg",
+    "static/media/Logo.png": "/static/media/Logo.627b4777f25b1fe8c366.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.285a377c.css.map": "/static/css/main.285a377c.css.map",
+    "main.c0bd7d88.js.map": "/static/js/main.c0bd7d88.js.map",
+    "71.de9ecf15.chunk.js.map": "/static/js/71.de9ecf15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.285a377c.css",
+    "static/js/main.c0bd7d88.js"
+  ]
+}
