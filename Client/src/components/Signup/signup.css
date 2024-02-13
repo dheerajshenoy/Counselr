@@ -1,0 +1,38 @@
+form{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.link{
+    
+    padding: .3rem 1rem ;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: .2rem;
+    font-size: 1.2rem;
+    background-color:#1976D2;
+}
+
+.custombtn {
+    background-color: #FF5000;
+    margin: 1rem;
+    margin-top: 3rem;
+    padding: .5rem;
+    width: 100px;
+}
+
+.custombtn:hover {
+    background-color: #FF5000;
+    box-shadow: 0 5px 20px 0 gray;
+}
+
+.errtext {
+    color: red;
+    float: right;
+}

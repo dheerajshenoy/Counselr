@@ -1,0 +1,45 @@
+.footer {
+    position: sticky;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding-bottom: 40px;
+    background-color: #ffffff78;
+    backdrop-filter: blur(10px);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: -0px; */
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: -10px;
+}
+
+.contact p {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.contact p img {
+    border-radius: 50%;
+    height: 30px;
+}
+
+.copyright img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.contact p span {
+    display: block;
+    margin-bottom: -8px;
+}
