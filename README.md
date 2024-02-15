@@ -13,6 +13,7 @@ PCL Project
 # TODO
 
 * [ ] Contents for slideshow
-* [ ] Handle Login and Signup
+* [x] Handle Login and Signup
 * [ ] Contents for the pricing tab
+* [x] Contents for the About tab
 * [ ] Test elements for the aptitude test

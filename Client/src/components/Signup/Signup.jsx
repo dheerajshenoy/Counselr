@@ -15,6 +15,7 @@ import {
     Radio,
     FormGroup,
 } from "@mui/material";
+
 import css from "./signup.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -74,7 +75,7 @@ export default function Signup() {
 	}
 	if (name && email && password && mobile && data && role) {
 	    axios
-		.post("http://localhost:9000/register", {
+		.post("http://localhost:3000/landing", {
 		    name,
 		    email,
 		    mobile,
@@ -84,6 +85,8 @@ export default function Signup() {
 		})
 		.then((result) => console.log(result))
 		.catch((err) => console.log(err));
+	} else {
+	    console.log("CANT POST");
 	}
 	console.log(skills);
     };
@@ -96,6 +99,7 @@ export default function Signup() {
 		placeholder="Enter your Full Name"
 		sx={{ display: "block" }}
 		fullWidth
+		required
 		onChange={(e) => setname(e.target.value)}
 	    />
 	    <small>{nameerr && <p class="errtext">Name is Mandatory</p>}</small>
@@ -104,6 +108,7 @@ export default function Signup() {
 		placeholder="Enter your Email"
 		variant="outlined"
 		sx={{ display: "block", mt: 1, margin: "auto ,1" }}
+		required
 		fullWidth
 		type="email"
 		onChange={(e) => setemail(e.target.value)}
@@ -116,6 +121,7 @@ export default function Signup() {
 		variant="outlined"
 		sx={{ display: "block", mt: 1, margin: "auto, 1" }}
 		fullWidth
+		required
 		onChange={(e) => setmobile(e.target.value)}
 	    />
 	    <small>{moberr && <p class="errtext">Mobile Number is Mandatory</p>}</small>
@@ -127,6 +133,7 @@ export default function Signup() {
 		type="password"
 		sx={{ display: "block", mt: 1, margin: "auto,1" }}
 		fullWidth
+		required
 		onChange={(e) => setpassword(e.target.value)}
 	    />
 	    <small>{emptypassword && <p class="errtext">Password is Mandatory</p>}</small>
@@ -137,18 +144,18 @@ export default function Signup() {
 		type="password"
 		sx={{ mt: 1 }}
 		fullWidth
+		required
 		onChange={(e) => setConfirmPassword(e.target.value)}
 	    />
 	    <small>{passsworderror && <p class="errtext">Password Doesnot match</p>}</small>
 	    <Card>
-		<FormControl>
+		<FormControl required>
 		    <FormLabel id="demo-radio-buttons-group-label">Role</FormLabel>
 		    <RadioGroup
 			sx={{ display: "inline" }}
 			aria-labelledby="demo-radio-buttons-group-label"
 			defaultValue="male"
-			name="radio-buttons-group"
-		    >
+			name="radio-buttons-group">
 			<FormControlLabel
 			    value="Teacher"
 			    control={<Radio />}
@@ -165,19 +172,28 @@ export default function Signup() {
 		</FormControl>
 	    </Card>
 	    <Button
-		className="custombtn"
 		variant="contained"
-		sx={{ width: "auto", margin: "auto", mt: -1 }}
+		sx={{
+		    mt: -1,
+		    width: "100px",
+		    margin: "1rem",
+		    backgroundColor: "orange"
+		}}
 		disableRipple
 		type="submit"
 		onClick={cnfPassword}>
 		Sign Up
 	    </Button>
 
-	    <Button component={Link} to="/login"
-		    className="custombtn"
+	    <Button component={Link}
+		    to="/login"
 		    variant="contained"
-		    sx={{ width: "auto", margin: "auto", mt: -1 }}
+		    sx={{
+			mt: -1,
+			width: "100px",
+			margin: "1rem",
+			backgroundColor: "orange"
+		    }}
 		    disableRipple>
 		Login
 	    </Button>

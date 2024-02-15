@@ -7,19 +7,31 @@ import {
     width,
     Card,
     Button,
+    Switch
 } from "@mui/material";
 
-import css from "./login.css";
 import { useState } from "react";
 import Footer from "../HomepageComponents/Footer";
 import { Link, Navigate, Route } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import LandingPage from "../HomepageComponents/LandingPage";
+import Signup from "../Signup/Signup";
+import css from "./login.css";
 
-<Route path="/landing" element={<LandingPage/>}></Route>
+let custombtn = {
+    width: 100,
+    margin: "auto",
+    mt: -1,
+    backgroundColor: "green"
+};
+
+<Route path="/landing" component={<LandingPage/>}/>
+
+
 
 export default function Login() {
+
     let [email, setemail] = useState("");
     let [password, setpassword] = useState("");
     let [emailerr, setemailerr] = useState(false);
@@ -41,19 +53,18 @@ export default function Login() {
 	}
 
 	if(email && password) {
-	    navigate('/landing')
+	    navigate("/landing");
 	}
 
     };
 
     let handlesubmit = (e) => {
 	e.preventDefault();
-	axios
-	    .post("http://localhost:9000/login", { email, password })
+	axios.post("/login", { email, password })
 	    .then((result) => {
 		console.log(result);
 		if (result.data === "Success") {
-		    navigate("/home");
+		    navigate("/landing");
 		}
 		return email;
 	    })
@@ -68,6 +79,7 @@ export default function Login() {
 		    name="Outlined"
 		    placeholder="Enter your Email"
 		    variant="outlined"
+		    required
 		    sx={{ display: "block" }}
 		    fullWidth
 		    onChange={(e) => setemail(e.target.value)}
@@ -86,24 +98,31 @@ export default function Login() {
 		/>
 		<small>{passworderr && <p>Name is Mandatory</p>}</small>
 
-		<Button component={Link}
-			className="custombtn"
-			variant="contained"
-			sx={{ width: 100, margin: "auto", mt: -1 }}
+		<Button variant="contained"
+			sx={{
+			    width: "100px",
+			    margin: "1rem",
+			    backgroundColor: "orange"
+			}}
 			disableRipple
 			type="submit"
 			onClick={cnfLogin}>
 		    Login
 		</Button>
 
-		<Button className="custombtn"
-			component={Link}
+		<Button component={Link}
 			to="/signup"
 			variant="contained"
-			sx={{ width: "auto", margin: "auto", mt: -1 }}
+			sx={{
+
+			    width: "100px",
+			    margin: "1rem",
+			    backgroundColor: "orange"
+			}}
 			disableRipple>
 		    Sign Up
 		</Button>
+
 	    </Card>
 	</form>
     );

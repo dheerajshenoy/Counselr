@@ -1,15 +1,15 @@
-.exam{
+.exam {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
-.exam>img{
+.exam>img {
     height: 400px;
 }
 
-.exam>div>a{
+.exam>div>a {
     text-decoration: none;
     border: 1px solid;
     padding: 10px 20px;
@@ -24,7 +24,7 @@ div a {
     gap: 10px;
 }
 
-div a img{
+div a img {
     height: 40px;
 }
 

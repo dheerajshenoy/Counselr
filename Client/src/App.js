@@ -10,20 +10,20 @@ import Signup from "./components/Signup/Signup"
 import Home from "./components/HomepageComponents/Home";
 import LandingPage from "./components/HomepageComponents/LandingPage";
 import Pricing from "./components/Pricing/Pricing";
+import About from "./components/About/About";
 
 function App() {
     return (
 	    <div> 
 	    <Nav />
 	    <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/login" element={<Login/>}></Route>
-            <Route path="/signup" element={<Signup/>}></Route>
-            <Route path="/landing" element={<LandingPage/>}></Route>
-            <Route path="/pricing" element={<Pricing/>}></Route>
-            
-	</Routes>
-	    
+	    <Route path="/" element={<Home/>}></Route>
+	    <Route path="/login" element={<Login/>}></Route>
+	    <Route path="/signup" element={<Signup/>}></Route>
+	    <Route path="/landing" element={<LandingPage/>}></Route>
+	    <Route path="/pricing" element={<Pricing/>}></Route>
+	    <Route path="/about" element={<About/>}></Route>
+	    </Routes>
 	</div>
     );
 }
