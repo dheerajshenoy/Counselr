@@ -1,0 +1,77 @@
+.form{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://www.psychologs.com/wp-content/uploads/2024/01/why-should-doctors-be-trained-in-psychology.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+div input,.input{
+    box-shadow:  2px 2px 15px #00000045;
+
+    width: 89%;
+    height: 3em;
+    border: 1px solid;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px;
+    padding-left: 20px;
+    background-color: #ffffff03;
+}
+.appointmentDate{
+    justify-content: space-around;
+    display: flex;
+width: 90%;
+margin: auto;
+}
+form{
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffffc4;
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+
+}
+.appointmentDate input{
+    margin-top: 9px;
+}
+.FormControl{
+    border: 1px solid green;
+}
+ input::placeholder{
+    font-style: italic;
+    /* text-align: center; */
+    font-size: 20px;
+}
+.submit{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    box-shadow:  5px 5px 5px #40a2e357;
+    border-radius: 8px;
+    border: 2px solid #40A2E3;
+    outline: none;
+    background-color: #ffffff00;
+    transition: .3s;
+    /* margin-right: 1em;
+    margin-left: 2em; */
+    color: #40A2E3;
+}
+.submit:hover{
+background-color: #40A2E3;
+color: white;
+}
+
+.gender,.appointmentDate{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.sButton{
+    display: flex;
+    margin-left: 1em;
+    /* gap: -2em;/ */
+    justify-content: center;
+}

@@ -10,17 +10,17 @@ import copyright from "../ICONS/copyright.gif"
 
 function Footer() {
     useEffect(()=>{
-	Aos.init();
+        Aos.init();
     },[])
     return (
-	<div className='footer data-aos="flip-down"'>
-	    <div className='contact'>
-		<p> <img src={email} alt="" /> counselr@gmail.com</p>
-		{/* <p><CiMail className='logo'/> counselr@gmail.com</p> */}
+        <div className='footer data-aos="flip-down"'>
+            <div className='contact'>
+                <p> <img src={email} alt="" /> counselr@gmail.com</p>
+                {/* <p><CiMail className='logo'/> counselr@gmail.com</p> */}
             <p><img src={mobile} alt="" /> +91 XXXXXXXXXX</p>
-	</div>
-	<div className='copyright'><img src={copyright} alt="" />  Counselr</div>
-	</div>
+        </div>
+        <div className='copyright'><img src={copyright} alt="" />  Counselr</div>
+        </div>
     )
 }
 

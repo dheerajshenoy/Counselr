@@ -4,11 +4,11 @@ import Details from './Details'
 import Footer from './Footer'
 function Home() {
     return (
-	<>
-	    <Carouselcmp/>
-	    <Details/>
-	    <Footer/>
-	</>
+        <>
+            <Carouselcmp/>
+            <Details/>
+            <Footer/>
+        </>
     )
 }
 

@@ -1,21 +1,19 @@
-.exam {
+.exam{
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-}
 
-.exam>img {
+}
+.exam>img{
     height: 400px;
 }
-
-.exam>div>a {
+.exam>div>a{
     text-decoration: none;
     border: 1px solid;
     padding: 10px 20px;
     border-radius: 10px;
 }
-
 div a {
     width: fit-content;
     display: flex;
@@ -23,11 +21,9 @@ div a {
     margin-left: 130px;
     gap: 10px;
 }
-
-div a img {
-    height: 40px;
+div a img{
+height: 40px;
 }
-
 @media (max-width:768px){
     .exam{
         width: 70%;
@@ -36,4 +32,5 @@ div a img {
         margin: auto;
         margin-top: 50px;
     }
+    
 }

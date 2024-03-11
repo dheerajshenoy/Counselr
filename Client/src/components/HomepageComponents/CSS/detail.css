@@ -2,13 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
-    margin: auto;
+    margin: 0;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     border-radius: 20px;
     padding: 50px 30px;
     border: 2px solid #FDD835;
     box-shadow: 0px 10px 30px 0px gray;
+}
+
+.details-link {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: auto;
 }
 
 .details>div{
@@ -20,12 +29,12 @@
     border-radius: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .details{
         width: 70%;
         flex-direction: column;
@@ -33,5 +42,5 @@ a{
         margin: auto;
         margin-top: 50px;
     }
-    
+
 }

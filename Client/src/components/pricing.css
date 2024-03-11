@@ -1,0 +1,75 @@
+.free , .paid{
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    border: 5px solid rgba(128, 128, 128, 0.636);
+    box-shadow: 1em 1em 1em rgba(128, 128, 128, 0.44);
+    width: 23em;
+    height: 55em;
+}
+
+.mainPricingSection{
+    height: 50em;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around ;
+    /* gap: -3em    ; */
+    /* width: 35em; */
+}
+
+.paid button , .free button{
+    margin-top: 1em;
+    display: inline-block;
+    margin-left: 30%;
+    /* border: 1px solid red; */
+    border: none;
+    background-color: tomato;
+    color: #ffffff;
+    font-weight: 600;
+    padding: .6em 1em;
+    font-size: 1.1em;
+    border-radius: .5em;
+}
+
+.mainPricingSection ul,li{
+    list-style: none;
+    margin-top: 1em;
+}
+
+.icon{
+    border-radius: 100%;
+    background-color: rgba(255, 99, 71, 0.337);
+    padding: .6em;
+    margin: auto;
+    font-size: 1.5em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.innericon{
+    padding: .6em;
+    border-radius: 100%;
+    background-color: rgba(255, 99, 71, 0.425);
+}
+.secondInnerIcon{
+    padding: 1em;
+    border-radius: 100%;
+    background-color: tomato;
+}
+.price>h1{
+    font-size: 2.5em;
+}
+
+.price>h1+p{
+    font-size: 2em;
+
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

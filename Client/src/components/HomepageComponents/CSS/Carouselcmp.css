@@ -8,13 +8,14 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 5em;
+    /* font-family: "Rajdhani Semibold"; */
+    font-size: 2.5em;
     color: white;
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(100, 100, 0, 0.3);
+    backdrop-filter: blur(10px); /* Add blur effect */
     width: 100%;
     zIndex: 0;
     transition: 1s ease-in-out;
 }
-
